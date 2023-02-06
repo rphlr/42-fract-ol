@@ -6,7 +6,7 @@
 #    By: rrouille <rrouille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/22 23:12:10 by pbondoer          #+#    #+#              #
-#    Updated: 2023/02/06 19:23:00 by rrouille         ###   ########.fr        #
+#    Updated: 2023/02/06 19:24:25 by rrouille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -117,8 +117,8 @@ run: re
 			@./fractol
 
 # Git repo maker
-git:
-			@git add * 2>/dev/null
+git: fclean
+			@git add *
 			@echo "${CYAN}Added files to git !"
 			@git commit -m "Auto-commit"
 			@echo "${BLUE}Commited !"
